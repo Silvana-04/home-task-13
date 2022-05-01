@@ -244,6 +244,7 @@ ul{
     padding: 119px 0px;
     background-size: cover;
     color:#444444;
+    background-position: bottom right;
 }
 
 .welcome-section h1{
