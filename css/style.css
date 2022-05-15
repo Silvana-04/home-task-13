@@ -188,6 +188,14 @@ nav li a{
     margin-right: 30px;
 }
 
+a{
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: #F55F39;
+}
+
 ul{
     list-style: none;
 }
@@ -196,6 +204,11 @@ ul{
   position: absolute;
   left: calc(50% - 75px);
   top: 0;
+}
+
+.logo-wrap:hover{
+  cursor: pointer;
+  box-shadow: 1px 0px 12px 5px rgba(250, 164, 3, 0.5);
 }
 
 .header-form{
@@ -212,6 +225,12 @@ ul{
     line-height: 21px;
     padding: 10.5px 42px;
     float: right;
+}
+
+.header-form button:hover{
+  color: #F55F39;
+  cursor: pointer;
+  box-shadow: 1px 0px 12px 5px rgba(250, 164, 3, 0.5);
 }
 
 .header-form input{
@@ -298,6 +317,7 @@ ul{
     width: 210px;
     text-align: center;
     padding: 9px 0px 0px 0px;
+    border: none;
 }
 
 .welcome-btn span{
@@ -316,6 +336,18 @@ ul{
 .welcome-btn.btn-white{
     background: #FFFFFF;
     color:#4D4D4D;
+}
+
+.welcome-btn.btn-orange:hover{
+  background: #FFFFFF;
+  color:#4D4D4D;
+  cursor: pointer;
+}
+
+.welcome-btn.btn-white:hover{
+  background: #F55F39;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 .help-section{
@@ -380,7 +412,7 @@ ul{
   margin-bottom: 17px;
 }
 
-.help-btn{
+.help-btn button{
   font-size: 15px;
   line-height: 23px;
   padding: 12px 16px;
@@ -391,16 +423,23 @@ ul{
   position: relative;
   right: 270px;
   top: 13px;
+  border: none;
+}
+
+.help-btn button:hover{
+  cursor: pointer;
+  color: #F55F39;
+  box-shadow: 1px 0px 12px 5px rgba(250, 164, 3, 0.5);
 }
 
 .blog-section h2{
   font-size: 52px;
   line-height: 49px;
   color: #444444;
-  width: 490px;
+  width: 500px;
 }
 
-.blog-section h2 span::before{
+.blog-section h2 a::before{
   content: "";
   width: 100%;
   position: absolute;
@@ -410,12 +449,16 @@ ul{
   left: 0;
 }
 
-.blog-section h2 span{
+.blog-section h2 a{
   font-size: 52px;
   line-height: 43px;
   color: #F55F39;
   position: relative;
   margin-left: 10px;
+}
+
+.blog-section h2 a:hover::before{
+  box-shadow: 1px 0px 12px 5px rgba(250, 164, 3, 0.5);
 }
 
 .blog-wrap{
@@ -513,6 +556,10 @@ ul{
   margin: 0px;
 }
 
+.seven-things h4:hover{
+  text-shadow: 2px 2px 3px #f8b705;
+}
+
 .visit-blog{
   background: url(../img/visit_blog_bg.png);
   max-width: 316px;
@@ -535,11 +582,16 @@ ul{
   margin-bottom: 20px;
 }
 
-.visit-blog span{
+.visit-blog a{
   font-size: 14px;
   line-height: 23px;
   color: #F55F39;
   text-transform: capitalize;
+}
+
+.visit-blog a:hover{
+  text-decoration: underline;
+  text-shadow: 1px 1px 12px #cdcdcd;
 }
 
 .last-news{
@@ -575,7 +627,7 @@ ul{
     font-size: 40px;
   }
   
-  .blog-section h2 span {
+  .blog-section h2 a {
     font-size: 40px;
   }
 }
@@ -590,7 +642,7 @@ ul{
   width: 415px;
 }
 
-.blog-section h2 span {
+.blog-section h2 a {
   font-size: 30px;
 }
 }
